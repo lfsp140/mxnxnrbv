@@ -776,3 +776,761 @@ footer {
 .footer__link-light:hover {
     color: #1a46be;
 }
+
+/*Адаптивная верстка*/
+@media (max-width: 360px) {
+    .button {
+        font-size: 16pt;
+        height: 50px;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        position: static;
+    }
+    .header__main-panel {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .header__button-menu {
+        display: block;
+    }
+    .header__menu {
+        display: none;
+        flex-direction: column;
+        align-items: start;
+        font-size: 16pt;
+    }
+    .header__menu_active {
+        display: flex;
+    }
+
+    .index__title {
+        font-size: 28pt;
+    }
+    .slider {
+        width: 90%;
+        margin: 50px auto 80px auto;
+    }
+    .slider__button {
+        height: 60px;
+        width: 40px;
+    }
+    .slider__indicator {
+        width: 10px;
+        height: 12px;
+    }
+    .slider__slide {
+        width: 90%;
+        margin: 0px 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider__image {
+        height: 120px;
+        margin: 0px;
+    }
+    .slider__text-block {
+        font-size: 18pt;
+        margin: 0px auto;
+        text-align: center;
+    }
+    .slider__title {
+        font-size: 20pt;
+    }
+    .slider__price {
+        margin: 15px 0px 30px 0px;
+    }
+    .slider__link {
+        padding: 10px;
+        font-size: 14pt;
+    }
+    .index-title {
+        font-size: 20pt;
+    }
+    .search__form {
+        flex-direction: column;
+        width: 100%;
+        text-align: right;
+    }
+    .search__input {
+        width: 100%;
+    }
+    .search__button {
+        width: 50%;
+        margin: 20px 0px 0px auto;
+    }
+    .advantages {
+        width: 82%;
+        margin: 70px auto;
+        padding: 15px;
+    }
+    .advantages__list-of-advantages {
+        flex-direction: column;
+    }
+    .advantages__advantage {
+        width: 80%;
+        margin: 20px auto;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 10px 0px 10px;
+        font-size: 14pt;
+    }
+    .advantages__image {
+        height: 50px;
+    }
+    .games {
+        width: 90%;
+    }
+    .games__list-of-games {
+        width: 100%;
+    }
+    .games__card-of-game {
+        width: 100%;
+        border-bottom: 3px solid #9429d1;
+        border-top: 3px solid #9429d1;
+        padding: 10px;
+    }
+    .partners {
+        width: 90%;
+    }
+    .partners__list-of-partners {
+        justify-content: start;
+    }
+    .partners__image {
+        height: 100px;
+        margin: 15px 10px;
+    }
+
+    .catalog {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .catalog__title {
+        font-size: 24pt;
+        margin: 50px 0px 0px 10%;
+    }
+    .catalog__filter {
+        width: 86%;
+        margin: 0px auto;
+        font-size: 14pt;
+    }
+    .catalog__filter-title {
+        font-size: 18pt;
+    }
+    .catalog__image-down {
+        display: block;
+    }
+    .catalog__form {
+        display: none;
+    }
+    .catalog__form_active {
+        display: flex;
+    }
+    .catalog__list-of-cards {
+        width: 92%;
+        padding: 10px;
+        margin: 0px auto;
+    }
+    .catalog__card-of-game {
+        width: 90%;
+    }
+
+    .main-panel {
+        flex-direction: column;
+        width: 90%;
+        margin: 20px auto;
+    }
+    .main-panel__user-panel {
+        width: 90%;
+        margin: 20px auto 50px auto;
+    }
+    .main-panel__info-user {
+        margin: 10px 0px 50px 0px;
+    }
+    .main-panel__settings {
+        margin: 50px 0px 20px 0px;
+    }
+    .main-panel__theme-block {
+        width: 75%;
+        margin: 15px 15px 30px 15px;
+    }
+    .main-panel__history-buys {
+        width: 83%;
+        padding: 10px;
+    }
+    .main-panel__history-buys-title {
+        font-size: 20pt;
+        margin: 15px 10px;
+    }
+    .main-panel__buy {
+        flex-direction: column;
+        margin: 10px 15px 20px 15px;
+    }
+    .main-panel__buy_end {
+        flex-direction: column;
+    }
+    .main-panel__buy-name {
+        width: 100%;
+        margin: 10px;
+    }
+    .main-panel__buy-info {
+        width: 100%;
+        font-size: 12pt;
+    }
+    .main-panel__buy-date {
+        margin: 5px 10px 10px 0px;
+    }
+    .main-panel__buy-price {
+        margin: 5px 5px 10px 10px;
+    }
+
+    .template-form {
+        width: 80%;
+        padding: 15px 15px 30px 15px;
+        font-size: 14pt;
+        margin: 70px auto 0px auto;
+    }
+    .form__button-login {
+        width: 50%;
+        margin-top: 30px;
+    }
+    .form__button-register {
+        width: 85%;
+    }
+    .form__button-admin {
+        width: 50%;
+    }
+    .form__field-double {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .form__item_short {
+        width: 100%;
+    }
+    .form__link {
+        font-size: 16pt;
+    }
+    input, textarea {
+        font-size: 14pt;
+        height: 35px;
+    }
+    .form__check-person-data {
+        margin: 30px 0px 20px 0px;
+    }
+
+    footer {
+        display: block;
+        width: 90%;
+        padding: 40px 5% 20px 5%;
+    }
+    .footer__list-of-links {
+        margin: 30px 10px 40px 20px;
+    }
+    .footer__text {
+        margin: 15px 0px 15px 0px;
+    }
+}
+
+@media ((min-width: 359px) and (max-width: 768px)) {
+    .button {
+        font-size: 16pt;
+        height: 50px;
+    }
+
+    header {
+        flex-direction: column;
+        position: static;
+    }
+    .header__main-panel {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .header__button-menu {
+        display: block;
+    }
+    .header__menu {
+        display: none;
+        align-items: start;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .header__menu_active {
+        display: flex;
+    }
+
+    .index__title {
+        font-size: 30pt;
+    }
+    .slider {
+        width: 90%;
+        margin: 50px auto 80px auto;
+    }
+    .slider__button {
+        height: 60px;
+        width: 40px;
+    }
+    .slider__indicator {
+        width: 10px;
+        height: 12px;
+    }
+    .slider__slide {
+        width: 90%;
+        margin: 0px 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider__image {
+        width: 90%;
+        height: fit-content;
+        margin: 0px;
+    }
+    .slider__text-block {
+        font-size: 20pt;
+        margin: 0px auto;
+        text-align: center;
+    }
+    .slider__title {
+        font-size: 22pt;
+    }
+    .slider__price {
+        margin: 15px 0px 30px 0px;
+    }
+    .slider__link {
+        padding: 15px;
+        font-size: 16pt;
+    }
+    .index-title {
+        font-size: 22pt;
+    }
+    .search__form {
+        flex-direction: column;
+        width: 100%;
+    }
+    .search__input {
+        width: 100%;
+    }
+    .search__button {
+        width: 40%;
+        margin: 20px 0px 0px auto;
+    }
+    .advantages {
+        width: 80%;
+        margin: 70px auto;
+        padding: 15px;
+    }
+    .advantages__list-of-advantages {
+        flex-direction: column;
+    }
+    .advantages__advantage {
+        width: 60%;
+        max-width: 350px;
+        margin: 20px auto;
+        flex-wrap: wrap;
+        padding: 10px;
+        font-size: 16pt;
+    }
+    .advantages__text {
+        margin: 10px auto;
+        max-width: 200px;;
+    }
+    .advantages__image {
+        height: 60px;
+        margin: 10px auto;
+    }
+    .games {
+        width: 70%;
+    }
+    .games__list-of-games {
+        width: 100%;
+        justify-content: center;
+    }
+    .games__card-of-game {
+        width: 70%;
+        border-bottom: 3px solid #9429d1;
+        border-top: 3px solid #9429d1;
+        padding: 10px;
+    }
+    .partners {
+        width: 90%;
+    }
+    .partners__list-of-partners {
+        justify-content: space-around;
+    }
+    .partners__image {
+        height: 100px;
+        margin: 15px 10px;
+    }
+
+    .catalog {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .catalog__title {
+        font-size: 26pt;
+        margin: 50px 0px 0px 10%;
+    }
+    .catalog__filter {
+        width: 70%;
+        margin: 0px auto;
+        font-size: 14pt;
+    }
+    .catalog__filter-title {
+        font-size: 18pt;
+        margin: 10px 0px 5px 0px;
+    }
+    .catalog__image-down {
+        display: block;
+    }
+    .catalog__form {
+        display: none;
+    }
+    .catalog__form_active {
+        display: flex;
+    }
+    .catalog__list-of-cards {
+        width: 90%;
+        justify-content: center;
+    }
+    .catalog__card-of-game {
+        width: 35%;
+        max-width: 350px;
+        padding: 20px;
+        min-width: 170px;
+    }
+    .catalog__image {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .main-panel {
+        flex-direction: column;
+        width: 90%;
+        margin: 20px auto;
+    }
+    .main-panel__user-panel {
+        width: 100%;
+
+        margin: 20px auto 50px auto;
+    }
+    .main-panel__info-user {
+        margin: 10px auto 50px auto;
+        max-width: 310px;
+    }
+    .main-panel__settings {
+        margin: 10px auto 20px auto;
+        max-width: 310px;
+    }
+    .main-panel__theme-block {
+        width: 75%;
+        margin: 15px 15px 30px 15px;
+    }
+    .main-panel__history-buys {
+        width: 83%;
+        padding: 10px;
+    }
+    .main-panel__history-buys-title {
+        font-size: 20pt;
+        margin: 15px 10px;
+    }
+    .main-panel__buy {
+        flex-direction: column;
+        margin: 10px 15px 20px 15px;
+    }
+    .main-panel__buy_end {
+        flex-direction: column;
+    }
+    .main-panel__buy-name {
+        width: 100%;
+        margin: 10px;
+    }
+    .main-panel__buy-info {
+        width: 100%;
+        font-size: 14pt;
+    }
+    .main-panel__buy-date {
+        margin: 5px 10px 10px 0px;
+    }
+    .main-panel__buy-price {
+        margin: 5px 10px 10px 10px;
+    }
+
+    .template-form {
+        width: 70%;
+        padding: 15px 30px 30px 30px;
+        font-size: 16pt;
+        margin: 70px auto 0px auto;
+    }
+    .form__button-login {
+        width: 45%;
+        margin-top: 30px;
+    }
+    .form__button-register {
+        width: 60%;
+        min-width: 250px;
+        margin-bottom: 20px;
+    }
+    .form__button-admin {
+        width: 50%;
+    }
+    .form__field-double {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .form__item_short {
+        width: 100%;
+    }
+    .form__link {
+        font-size: 16pt;
+        margin-top: 20px;
+    }
+    input, textarea {
+        font-size: 14pt;
+        height: 35px;
+    }
+    .form__check-person-data {
+        margin: 30px 0px 10px 0px;
+    }
+
+    footer {
+        width: 80%;
+        padding: 40px 10% 20px 10%;
+        justify-content: space-between;
+    }
+    .footer__list-of-links {
+        min-width: 150px;
+        margin: 20px 10px 20px 10px;
+    }
+    .footer__list-of-links_long {
+        min-width: 280px;
+    }
+    .footer__text {
+        margin: 15px 0px 15px 0px;
+    }
+}
+
+@media ((min-width: 767px) and (max-width: 1440px)) {
+    .header__menu {
+        width: 75%;
+    }
+    .header__button-menu {
+        display: none;
+    }
+
+    .index__title {
+        font-size: 30pt;
+    }
+    .slider {
+        width: 80%;
+        margin: 50px auto 80px auto;
+    }
+    .slider__button {
+        height: 60px;
+        width: 40px;
+    }
+    .slider__indicator {
+        width: 10px;
+        height: 12px;
+    }
+    .slider__slide {
+        width: 90%;
+        margin: 0px 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider__image {
+        width: 90%;
+        height: fit-content;
+        margin: 0px;
+    }
+    .slider__text-block {
+        display: flex;
+        width: 70%;
+        justify-content: space-around;
+        font-size: 20pt;
+        margin: 30px auto 0px auto;
+        align-items: center;
+    }
+    .slider__title {
+        font-size: 22pt;
+        margin: 10px;
+    }
+    .slider__price {
+        margin: 10px;
+    }
+    .slider__link {
+        padding: 15px;
+        font-size: 18pt;
+    }
+    .index-title {
+        font-size: 22pt;
+    }
+    .search__form {
+        flex-direction: column;
+        width: 100%;
+    }
+    .search__input {
+        width: 100%;
+    }
+    .search__button {
+        width: 20%;
+        margin: 20px 0px 0px auto;
+    }
+    .advantages {
+        width: 80%;
+        margin: 70px auto;
+        padding: 15px;
+    }
+    .advantages__advantage {
+        width: 40%;
+        max-width: 350px;
+        margin: 20px 10px;
+        flex-wrap: wrap;
+        padding: 10px;
+        font-size: 16pt;
+    }
+    .advantages__text {
+        margin: 10px auto;
+        max-width: 200px;
+    }
+    .advantages__image {
+        height: 60px;
+        margin: 10px auto;
+    }
+    .games {
+        width: 90%;
+    }
+    .games__list-of-games {
+        width: 100%;
+        justify-content: center;
+    }
+    .games__card-of-game {
+        width: 25%;
+        max-width: 230px;
+        padding: 10px;
+    }
+    .partners {
+        width: 80%;
+    }
+    .partners__list-of-partners {
+        justify-content: center;
+    }
+    .partners__image {
+        height: 110px;
+        margin: 15px 30px;
+    }
+
+    .catalog {
+        width: 90%;
+    }
+    .catalog__filter {
+        width: 20%;
+        min-width: 230px;
+    }
+    .catalog__list-of-cards {
+        width: 70%;
+    }
+    .catalog__card-of-game {
+        width: 35%;
+        min-width: 230px;
+        padding: 20px;
+    }
+    .catalog__image {
+        width: 100%;
+        height: fit-content;
+        min-width: 210px;
+    }
+
+    .main-panel {
+        width: 90%;
+        margin: 20px auto;
+    }
+    .main-panel__user-panel {
+        width: fit-content;
+        margin: 20px 30px 50px 0px;
+    }
+    .main-panel__info-user {
+        margin: 10px 30px 50px 0px;
+        min-width: 230px;
+    }
+    .main-panel__settings {
+        margin: 10px 30px 20px 0px;
+        min-width: 230px;
+    }
+    .main-panel__theme-block {
+        margin: 15px 15px 30px 15px;
+    }
+    .main-panel__history-buys {
+        margin: 0px;
+    }
+    .main-panel__history-buys-title {
+        margin: 15px 10px;
+    }
+    .main-panel__buy {
+        flex-direction: column;
+        margin: 10px 15px 20px 15px;
+    }
+    .main-panel__buy_end {
+        flex-direction: column;
+    }
+    .main-panel__buy-name {
+        width: 100%;
+        margin: 10px;
+    }
+    .main-panel__buy-info {
+        width: 100%;
+        font-size: 14pt;
+    }
+    .main-panel__buy-date {
+        margin: 5px 10px 10px 0px;
+    }
+    .main-panel__buy-price {
+        margin: 5px 10px 10px 10px;
+    }
+
+    .template-form {
+        width: 50%;
+        padding: 15px 30px 30px 30px;
+        margin: 170px auto 0px auto;
+    }
+    .form__button-login {
+        width: 30%;
+        margin: 30px 0px;
+    }
+    .form__button-register {
+        width: 40%;
+        min-width: 250px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+    }
+    .form__button-admin {
+        width: 50%;
+    }
+    .form__link {
+        margin: 0px;
+    }
+    .form__check-person-data {
+        margin: 30px 0px 10px 0px;
+    }
+
+    footer {
+        width: 80%;
+        padding: 40px 10% 20px 10%;
+        justify-content: space-between;
+    }
+    .footer__list-of-links {
+        min-width: 150px;
+        margin: 20px 10px 20px 10px;
+    }
+    .footer__list-of-links_long {
+        min-width: 280px;
+    }
+    .footer__text {
+        margin: 15px 0px 15px 0px;
+    }
+}
