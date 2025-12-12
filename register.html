@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Регистрация</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style_adaptive.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="img/logo.png">
+    </head>
+    <body>
+        <header>
+            <div class="header__main-panel">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Логотип" class="header__logotype">
+                </a>
+                <button class="header__button-menu">
+                    <img src="img/burger.svg" class="header__icon-menu">
+                </button>
+            </div>
+            <nav class="header__menu">
+                <a class="header__menu-item" href="index.html#search">
+                    <img src="img/search.svg" class="header__image">
+                    Поиск
+                </a>
+                <a class="header__menu-item" href="catalog.html">
+                    <img src="img/catalog.svg" class="header__image">
+                    Каталог игр
+                </a>
+                <a class="header__menu-item" href="profile.html">
+                    <img src="img/avatar.svg" class="header__image">
+                    Личный кабинет
+                </a>
+                <a class="header__menu-item" href="login.html">
+                    <img src="img/door.svg" class="header__image">
+                    Войти
+                </a>
+            </nav>
+        </header>
+        <main>
+            <form class="template-form" action="" method="get">
+                <h2 class="form__title">Регистрация</h2>
+                <div class="form__item">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Введите e-mail">
+                </div>
+                <div class="form__field-double">
+                    <div class="form__item form__item_short">
+                        <label for="surname">Фамилия</label>
+                        <input id="surname" type="text" name="surname" placeholder="Введите фамилию">
+                    </div>
+                    <div class="form__item form__item_short">
+                        <label for="name_user">Имя</label>
+                        <input id="name_user" type="text" name="name_user" placeholder="Введите имя">
+                    </div>
+                </div>
+                <div class="form__field-double">
+                    <div class="form__item form__item_short">
+                        <label for="phone">Номер телефона</label>
+                        <input id="phone" type="tel" name="phone" placeholder="Введите номер телефона">
+                    </div>
+                    <div class="form__item form__item_short">
+                        <label for="birthday">Дата рождения</label>
+                        <input id="birthday" type="date" name="birthday" placeholder="Введите дату рождения">
+                    </div>
+                </div>
+                <div class="form__field-double">
+                    <div class="form__item form__item_short">
+                        <label for="password">Пароль</label>
+                        <input id="password" type="password" name="password" placeholder="Введите пароль">
+                    </div>
+                    <div class="form__item form__item_short">
+                        <label for="replay_password">Повтор пароля</label>
+                        <input id="replay_password" type="password" name="replay_password" placeholder="Введите пароль повторно">
+                    </div>
+                </div>
+                <label class="form__check-person-data" for="approval">
+                    <input type="checkbox" value="person_data" name="approval" id="approval" class="form__checkbox">
+                    Я согласен на обработку персональных данных
+                </label>
+                <div class="form__field-double">
+                    <button type="submit" class="button form__button-register">Зарегистрироваться</button>
+                    <a href="login.html" class="form__link form__link_end">
+                        Уже есть аккаунт?
+                    </a>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class="footer__list-of-links">
+                <div class="footer__text-block">
+                    <img src="img/phone.svg" class="footer__image">
+                    <p class="footer__text">Телефон: 8-800-999-55-99</p>
+                </div>
+                <div class="footer__text-block">
+                    <img src="img/email.svg" class="footer__image">
+                    <p class="footer__text">Email: best@games.ru</p>
+                </div>
+            </div>
+            <div class="footer__list-of-links">
+                <a href="" class="footer__link">Клиентам</a>
+                <a href="" class="footer__link">Партнерам</a>
+                <a href="" class="footer__link">О нас</a>
+                <a href="" class="footer__link">Контакты</a>
+            </div>
+            <div class="footer__list-of-links">
+                <a href="index.html" class="footer__link">Главная</a>
+                <a href="index.html#search" class="footer__link">Поиск</a>
+            </div>
+            <div class="footer__list-of-links">
+                <a href="register.html" class="footer__link">Регистрация</a>
+                <a href="login.html" class="footer__link">Авторизация</a>
+                <a href="profile.html" class="footer__link">Личный кабинет</a>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

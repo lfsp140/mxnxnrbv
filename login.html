@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Вход</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style_adaptive.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="img/logo.png">
+    </head>
+    <body>
+        <header>
+           <div class="header__main-panel">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Логотип" class="header__logotype">
+                </a>
+                <button class="header__button-menu">
+                    <img src="img/burger.svg" class="header__icon-menu">
+                </button>
+            </div>
+            <nav class="header__menu">
+                <a class="header__menu-item" href="index.html#search">
+                    <img src="img/search.svg" class="header__image">
+                    Поиск
+                </a>
+                <a class="header__menu-item" href="catalog.html">
+                    <img src="img/catalog.svg" class="header__image">
+                    Каталог игр
+                </a>
+                <a class="header__menu-item" href="profile.html">
+                    <img src="img/avatar.svg" class="header__image">
+                    Личный кабинет
+                </a>
+                <a class="header__menu-item" href="login.html">
+                    <img src="img/door.svg" class="header__image">
+                    Войти
+                </a>
+            </nav>
+        </header>
+        <main>
+            <form class="template-form form-login" action="" method="get">
+                <h2 class="form__title">Вход</h2>
+                <div class="form__item">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Введите e-mail">
+                </div>
+                <div class="form__item">
+                    <label for="password">Пароль</label>
+                    <input id="password" type="password" name="password" placeholder="Введите пароль">
+                </div>
+                <button type="submit" class="button form__button-login">Войти</button>
+                <div class="form__field-double">
+                    <a href="register.html" class="form__link">
+                        Регистрация
+                    </a>
+                    <a href="" class="form__link form__link_end">
+                        Восстановить пароль
+                    </a>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class="footer__list-of-links footer__list-of-links_long">
+                <div class="footer__text-block">
+                    <img src="img/phone.svg" class="footer__image">
+                    <p class="footer__text">Телефон: 8-800-999-55-99</p>
+                </div>
+                <div class="footer__text-block">
+                    <img src="img/email.svg" class="footer__image">
+                    <p class="footer__text">Email: best@games.ru</p>
+                </div>
+            </div>
+            <div class="footer__list-of-links">
+                <a href="" class="footer__link">Клиентам</a>
+                <a href="" class="footer__link">Партнерам</a>
+                <a href="" class="footer__link">О нас</a>
+                <a href="" class="footer__link">Контакты</a>
+            </div>
+            <div class="footer__list-of-links">
+                <a href="index.html" class="footer__link">Главная</a>
+                <a href="index.html#search" class="footer__link">Поиск</a>
+            </div>
+            <div class="footer__list-of-links">
+                <a href="register.html" class="footer__link">Регистрация</a>
+                <a href="login.html" class="footer__link">Авторизация</a>
+                <a href="profile.html" class="footer__link">Личный кабинет</a>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
