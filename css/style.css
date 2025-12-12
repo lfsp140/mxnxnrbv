@@ -208,6 +208,170 @@ header {
     text-align: center;
 }
 
+/*profile.html личный кабинет пользователя*/
+.main-panel {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto 70px auto;
+}
+.main-panel__user-panel {
+    width: 30%;
+}
+.main-panel__info-user {
+    padding: 20px;
+    border: 3px solid #9537cc;
+    border-radius: 10px;
+    margin: 0px 20px 0px 0px;
+    background-color: #303030;
+}
+.main-panel__info-user-title {
+    font-size: 21pt;
+    margin-top: 10px;
+}
+.main-panel__info-user-data {
+    margin-left: 20px;
+    font-size: 14pt;
+}
+.main-panel__settings {
+    padding: 20px 20px 40px 20px;
+    border: 3px solid #9537cc;
+    border-radius: 10px;
+    margin: 30px 20px 0px 0px;
+    background-color: #303030;
+}
+.main-panel__settings-title {
+    font-size: 20pt;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.main-panel__theme-block {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 15px 20px 30px 20px;
+    width: 55%;
+}
+.main-panel__theme-title {
+    font-size: 16pt;
+}
+.main-panel__theme-control-block {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #2e5bd4;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+.main-panel__theme {
+    padding: 8px;
+    text-align: center;
+    width: 50%;
+}
+.main-panel__theme_choice {
+    background-color: rgb(46, 91, 212, 0.5);
+}
+.main-panel__theme_left {
+    border-right: 2px solid #2e5bd4;
+}
+.main-panel__image {
+    width: 35px;
+}
+.main-panel__new-password {
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid #2e5bd4;
+    background-color: rgb(46, 91, 212, 0.5);
+    border-radius: 8px;
+    margin: 0px 10px 0px 10px;
+    font-size: 14pt;
+    transition: all 0.5s ease;
+}
+.main-panel__new-password:hover {
+    background-color: #2e5bd4;
+}
+/*profile.html история покупок*/
+.main-panel__history-buys {
+    width: 70%;
+    margin: 0px auto;
+    border: 3px solid #9429d1;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #303030;
+}
+.main-panel__history-buys-title {
+    font-size: 22pt;
+    margin-top: 10px;
+}
+.main-panel__buy {
+    display: flex;
+    align-items: center;
+    padding-left: 2px;
+    border-bottom: 2px solid #9429d1;
+    margin: 10px 20px 20px 20px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+.main-panel__buy:hover {
+    background-color: rgb(148, 41, 209, 0.5);
+}
+.main-panel__buy::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #9429d1;
+    transition: all 0.5s ease;
+}
+.main-panel__buy:hover::after {
+    height: 65px;
+}
+.main-panel__buy::before {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 2px;
+    right: 0;
+    bottom: 0;
+    background-color: #9429d1;
+    transition: all 0.5s ease;
+}
+.main-panel__buy:hover::before {
+    height: 65px;
+}
+.main-panel__buy_end {
+    display: flex;
+    align-items: center;
+    padding-left: 2px;
+    margin: 10px 20px 20px 20px;
+    border-bottom: 0px;
+    transition: all 0.5s ease;
+}
+.main-panel__buy_end:hover {
+    background-color: rgb(148, 41, 209, 0.5);
+}
+.main-panel__buy-name {
+    width: 65%;
+    font-size: 16pt;
+    margin: 20px;
+}
+.main-panel__buy-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    font-size: 14pt;
+}
+.main-panel__buy-date {
+    margin: 10px;
+    text-align: center;
+}
+.main-panel__buy-price {
+    margin: 20px;
+    text-align: right;
+}
 
 /*admin.html, login.html, register.html стили для формы*/
 .template-form {
