@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Каталог игр</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/style_adaptive.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="img/logo.png">
+    </head>
+    <body>
+        <header>
+            <div class="header__main-panel">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Логотип" class="header__logotype">
+                </a>
+                <button class="header__button-menu">
+                    <img src="img/burger.svg" class="header__icon-menu">
+                </button>
+            </div>
+            <nav class="header__menu">
+                <a class="header__menu-item" href="index.html#search">
+                    <img src="img/search.svg" class="header__image">
+                    Поиск
+                </a>
+                <a class="header__menu-item" href="catalog.html">
+                    <img src="img/catalog.svg" class="header__image">
+                    Каталог игр
+                </a>
+                <a class="header__menu-item" href="profile.html">
+                    <img src="img/avatar.svg" class="header__image">
+                    Личный кабинет
+                </a>
+                <a class="header__menu-item" href="login.html">
+                    <img src="img/door.svg" class="header__image">
+                    Войти
+                </a>
+            </nav>
+        </header>
+        <main>
+            <h1 class="catalog__title">Каталог игр</h1>
+            <section class="catalog">
+                <div class="catalog__filter">
+                    <div class="catalog__top-block">
+                        <p class="catalog__filter-title">Фильтр</p>
+                        <img src="img/down.svg" class="catalog__image-down">
+                    </div>
+                    <form class="catalog__form" action="" method="get">
+                        <p class="catalog__filter-name">Жанр</p>
+                        <label class="catalog__genre" for="genre">
+                            <input type="checkbox" value="shuter" name="genre" class="catalog__genre-checkbox">
+                            Шутер
+                        </label>
+                        <label class="catalog__genre" for="genre">
+                            <input type="checkbox" value="simulator" name="genre" class="catalog__genre-checkbox">
+                            Симулятор
+                        </label>
+                        <label class="catalog__genre" for="genre">
+                            <input type="checkbox" value="rpg" name="genre" class="catalog__genre-checkbox">
+                            Ролевая игра (RPG)
+                        </label>
+                        <label class="catalog__genre" for="genre">
+                            <input type="checkbox" value="speed" name="genre" class="catalog__genre-checkbox">
+                            Гонки
+                        </label>
+                        <label class="catalog__genre" for="genre">
+                            <input type="checkbox" value="strategy" name="genre" class="catalog__genre-checkbox">
+                            Стратегия
+                        </label>
+                        <label class="catalog__genre" for="genre">
+                            <input type="checkbox" value="king_arena" name="genre" class="catalog__genre-checkbox">
+                            Королевская арена
+                        </label>
+                        <label class="catalog__genre" for="genre">
+                            <input type="checkbox" value="adventure" name="genre" class="catalog__genre-checkbox">
+                            Приключение
+                        </label>
+                        <label class="catalog__genre" for="genre">
+                            <input type="checkbox" value="sandbox" name="genre" class="catalog__genre-checkbox">
+                            Песочница
+                        </label>
+                        <button type="submit" class="button catalog__button">Применить</button>
+                    </form>
+                </div>
+                <div class="catalog__list-of-cards">
+                    <div class="catalog__card-of-game">
+                        <img src="img/fifa.webp" class="catalog__image">
+                        <h3 class="card-of-game__title">EA Sports FC 25</h3>
+                        <p class="card-of-game__genre">Симулятор</p>
+                        <p class="card-of-game__company">Electronic Arts (EA)</p>
+                        <p class="card-of-game__price">1 599 &#8381;</p>
+                        <div class="card-of-game__mark">
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                        </div>
+                        <a href="" class="card-of-game__link-button">Подробнее</a>
+                    </div>
+                    <div class="catalog__card-of-game">
+                        <img src="img/gta.webp" class="catalog__image">
+                        <h3 class="card-of-game__title">Grand Theft Auto V</h3>
+                        <p class="card-of-game__genre">Приключение</p>
+                        <p class="card-of-game__company">Rokstar Games</p>
+                        <p class="card-of-game__price">2 499 &#8381;</p>
+                        <div class="card-of-game__mark">
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                        </div>
+                        <a href="" class="card-of-game__link-button">Подробнее</a>
+                    </div>
+                    <div class="catalog__card-of-game">
+                        <img src="img/dota_2.webp" class="catalog__image">
+                        <h3 class="card-of-game__title">Dota 2</h3>
+                        <p class="card-of-game__genre">MOBA (Многопользовательская онлайн боевая арена)</p>
+                        <p class="card-of-game__company">Valve corporation</p>
+                        <p class="card-of-game__price">1 750 &#8381;</p>
+                        <div class="card-of-game__mark">
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                        </div>
+                        <a href="" class="card-of-game__link-button">Подробнее</a>
+                    </div>
+                    <div class="catalog__card-of-game">
+                        <img src="img/fortnite.webp" class="catalog__image">
+                        <h3 class="card-of-game__title">Fortnite</h3>
+                        <p class="card-of-game__genre">Королевская битва</p>
+                        <p class="card-of-game__company">Epic Games</p>
+                        <p class="card-of-game__price">1 399 &#8381;</p>
+                        <div class="card-of-game__mark">
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                        </div>
+                        <a href="" class="card-of-game__link-button">Подробнее</a>
+                    </div>
+                    <div class="catalog__card-of-game">
+                        <img src="img/detroit.webp" class="catalog__image">
+                        <h3 class="card-of-game__title">Detroit: Become Human</h3>
+                        <p class="card-of-game__genre">Приключение</p>
+                        <p class="card-of-game__company">Quantic Dream</p>
+                        <p class="card-of-game__price">2 100 &#8381;</p>
+                        <div class="card-of-game__mark">
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                        </div>
+                        <a href="" class="card-of-game__link-button">Подробнее</a>
+                    </div>
+                    <div class="catalog__card-of-game">
+                        <img src="img/call_of_duty.webp" class="catalog__image">
+                        <h3 class="card-of-game__title">Call of Duty</h3>
+                        <p class="card-of-game__genre">Шутер</p>
+                        <p class="card-of-game__company">Activision</p>
+                        <p class="card-of-game__price">2 350 &#8381;</p>
+                        <div class="card-of-game__mark">
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                        </div>
+                        <a href="" class="card-of-game__link-button">Подробнее</a>
+                    </div>
+                    <div class="catalog__card-of-game">
+                        <img src="img/minecraft.webp" class="catalog__image">
+                        <h3 class="card-of-game__title">Minecraft</h3>
+                        <p class="card-of-game__genre">Песочница</p>
+                        <p class="card-of-game__company">Mojang AB</p>
+                        <p class="card-of-game__price">2 150 &#8381;</p>
+                        <div class="card-of-game__mark">
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                        </div>
+                        <a href="" class="card-of-game__link-button">Подробнее</a>
+                    </div>
+                    <div class="catalog__card-of-game">
+                        <img src="img/witcher.webp" class="catalog__image">
+                        <h3 class="card-of-game__title">The Witcher</h3>
+                        <p class="card-of-game__genre">Ролевая игра (RPG)</p>
+                        <p class="card-of-game__company">CD Project</p>
+                        <p class="card-of-game__price">3 330 &#8381;</p>
+                        <div class="card-of-game__mark">
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                            <div class="card-of-game__mark-star card-of-game__mark-star_yellow">&#9733;</div>
+                        </div>
+                        <a href="" class="card-of-game__link-button">Подробнее</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer__list-of-links">
+                <div class="footer__text-block">
+                    <img src="img/phone.svg" class="footer__image">
+                    <p class="footer__text">Телефон: 8-800-999-55-99</p>
+                </div>
+                <div class="footer__text-block">
+                    <img src="img/email.svg" class="footer__image">
+                    <p class="footer__text">Email: best@games.ru</p>
+                </div>
+            </div>
+            <div class="footer__list-of-links">
+                <a href="" class="footer__link">Клиентам</a>
+                <a href="" class="footer__link">Партнерам</a>
+                <a href="" class="footer__link">О нас</a>
+                <a href="" class="footer__link">Контакты</a>
+            </div>
+            <div class="footer__list-of-links">
+                <a href="index.html" class="footer__link">Главная</a>
+                <a href="index.html#search" class="footer__link">Поиск</a>
+            </div>
+            <div class="footer__list-of-links">
+                <a href="register.html" class="footer__link">Регистрация</a>
+                <a href="login.html" class="footer__link">Авторизация</a>
+                <a href="profile.html" class="footer__link">Личный кабинет</a>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
