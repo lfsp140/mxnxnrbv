@@ -1,7 +1,21 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron.ttf');
+}
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/Bebas Neue Cyrillic.ttf');
+}
+@font-face {
+    font-family: 'Bebas Neue Regular';
+    src: url('../fonts/BebasNeue-Regular.ttf');
+}
+
 body {
     background-color: #1b1b1b;
     color: #e8e8e8;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Bebas Neue";
+    letter-spacing: 1px;
     margin: 0px;
 }
 
@@ -51,7 +65,7 @@ header {
 }
 .header__menu {
     font-size: 18pt;
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,7 +102,7 @@ header {
     font-size: 22pt;
 }
 .slider {
-    width: 70%;
+    width: 80%;
     margin: 70px auto 120px auto;
 }
 .slider__content {
@@ -128,6 +142,7 @@ header {
     align-items: center;
     margin: 0px 50px;
     width: 80%;
+    justify-content: space-around;
 }
 .slider__slide_active {
     display: flex;
@@ -142,9 +157,11 @@ header {
 }
 .slider__title {
     margin-bottom: 0px;
+    font-family: "Orbitron";
 }
 .slider__price {
     margin: 15px 0px 70px 10px;
+    font-family: "Orbitron";
 }
 .slider__link {
     padding: 15px 30px;
@@ -219,7 +236,7 @@ header {
     width: 96%;
     margin: 0px auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     border-bottom: 5px solid #8411c7;
     border-top: 5px solid #8411c7;
@@ -371,6 +388,7 @@ header {
 .card-of-game__title {
     font-size: 20pt;
     margin-bottom: 5px;
+    font-family: "Orbitron";
 }
 .card-of-game__genre {
     color: #aaaaaa;
@@ -379,10 +397,12 @@ header {
 }
 .card-of-game__company {
     margin: 0px;
+    font-family: "Orbitron";
 }
 .card-of-game__price {
     margin-bottom: 5px;
     font-size: 16pt;
+    font-family: "Orbitron";
 }
 .card-of-game__mark {
     display: flex;
@@ -555,6 +575,7 @@ header {
     width: 65%;
     font-size: 16pt;
     margin: 20px;
+    font-family: "Orbitron";
 }
 .main-panel__buy-info {
     display: flex;
@@ -713,7 +734,7 @@ footer {
 .body-light {
     background-color: #d8d8d8;
     color: #1b1b1b;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Bebas Neue";
     margin: 0px;
 }
 .header-light {
@@ -788,6 +809,7 @@ footer {
         display: flex;
         flex-direction: column;
         position: static;
+        align-items: end;
     }
     .header__main-panel {
         display: flex;
@@ -1040,10 +1062,10 @@ footer {
         font-size: 16pt;
         height: 50px;
     }
-
     header {
         flex-direction: column;
         position: static;
+        align-items: end;
     }
     .header__main-panel {
         display: flex;
@@ -1316,10 +1338,13 @@ footer {
 
 @media ((min-width: 767px) and (max-width: 1440px)) {
     .header__menu {
-        width: 75%;
+        width: 80%;
     }
     .header__button-menu {
         display: none;
+    }
+    .header__menu {
+        font-size: 16pt;
     }
 
     .index__title {
