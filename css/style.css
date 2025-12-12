@@ -79,6 +79,205 @@ header {
     margin-right: 10px;
 }
 
+.index__title {
+    font-size: 32pt;
+    margin: 70px 0px 0px 10%;
+}
+/*index.html слайдер*/
+.index-title {
+    font-size: 22pt;
+}
+.slider {
+    width: 70%;
+    margin: 70px auto 120px auto;
+}
+.slider__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.slider__button {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: #a9a9a9;
+    border: 0px;
+    font-size: 25pt;
+    padding: 0px 3px 3px 0px;
+}
+.slider__button_end {
+    padding: 0px 0px 3px 3px;
+}
+.slider__indicators {
+    text-align: center;
+    margin-top: 50px;
+}
+.slider__indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 30px;
+    margin: 0px 7px;
+    background-color: #6d6d6d;
+    border: 0px;
+}
+.slider__indicator_active {
+    background-color: #dbdbdb;
+}
+.slider__slide {
+    display: none;
+    align-items: center;
+    margin: 0px 50px;
+    width: 80%;
+}
+.slider__slide_active {
+    display: flex;
+}
+.slider__image {
+    height: 430px;
+    border-radius: 15px;
+    margin-right: 50px;
+}
+.slider__text-block {
+    font-size: 24pt;
+}
+.slider__title {
+    margin-bottom: 0px;
+}
+.slider__price {
+    margin: 15px 0px 70px 10px;
+}
+.slider__link {
+    padding: 15px 30px;
+    color: #e8e8e8;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20pt;
+    border: 3px solid #8411c7;
+    background-color: #8411c7;
+    transition: all 0.5s ease;
+}
+.slider__link:hover {
+    background-color: rgb(149, 55, 204, 0.5);
+}
+/*index.html поиск по жанрам*/
+.search {
+    margin: 0px auto;
+    border-radius: 8px;
+    width: 81%;
+}
+.search__form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20pt;
+    width: 95%;
+    margin: 0px auto;
+}
+.search__input {
+    width: 85%;
+    margin: 0px;
+    height: 50px;
+}
+.search__button {
+    width: 10%;
+}
+/*index.html преимущества*/
+.advantages {
+    width: 80%;
+    margin: 100px auto 50px auto;
+    padding: 15px 30px 30px 30px; 
+    border-radius: 10px;
+    background-color: #303030;
+}
+.advantages__list-of-advantages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.advantages__advantage {
+    border: 5px solid #9429d1;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 18%;
+    font-size: 17pt;
+    margin: 20px 10px;
+    text-align: center;
+}
+.advantages__image {
+    height: 60px;
+    margin: 0px auto;
+}
+/*index.html популярные игры*/
+.games {
+    width: 80%;
+    margin: 70px auto;
+}
+.games__list-of-games {
+    width: 96%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 5px solid #8411c7;
+    border-top: 5px solid #8411c7;
+    background-color: rgb(148, 41, 209, 0.5);
+    border-radius: 10px;
+}
+.games__link {
+    text-decoration: none;
+    color: #e8e8e8;
+}
+.games__card-of-game {
+    margin: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 15%;
+    position: relative;
+    transition: all 0.5s ease;
+}
+.games__card-of-game::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    pointer-events: none;
+}
+.games__card-of-game:hover::before {
+    border: 4px solid #9429d1;
+}
+.games__card-of-game:hover {
+    transform: scale(105%);
+}
+.games__image {
+    width: 100%;
+    border-radius: 10px;
+}
+/*index.html партнеры*/
+.partners {
+    width: 80%;
+    margin: 50px auto;
+}
+.partners__list-of-partners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.partners__image {
+    height: 150px;
+    border-radius: 10px;
+    margin: 0px 30px;
+}
+
 /*catalog.html стили для страницы каталога*/
 .catalog__title {
     margin: 150px 0px 0px 10%;
@@ -508,4 +707,72 @@ footer {
 }
 .footer__link:hover {
     color: #2e5bd4;
+}
+
+/*index_light.html стили для светлой темы*/
+.body-light {
+    background-color: #d8d8d8;
+    color: #1b1b1b;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+.header-light {
+    background-color: #a5a5a5;
+}
+.header__menu-item-light {
+    color: #1b1b1b;
+}
+.header__menu-item-light:hover {
+    background-color: rgba(64, 102, 204, 0.7);
+    transform: scale(110%);
+}
+
+.slider__link-light:hover {
+    background-color: rgb(148, 41, 209, 0.8);
+}
+.slider__indicator-light {
+    background-color: #7a7a7a;
+}
+.slider__indicator-light_active {
+    background-color: #3d3d3d;
+}
+
+.search__input-light {
+    background-color: #ffffff;
+}
+
+.advantages-light {
+    background-color: #afafaf;
+}
+
+.games__link-light {
+    color: #1b1b1b;
+}
+.games__list-of-games-light {
+    background-color: rgb(148, 41, 209, 0.6);
+}
+.games__card-of-game-light:hover::before {
+    border: 4px solid #760eb3;
+}
+.card-of-game__genre-light {
+    color: #dadada;
+    font-weight: bold;
+}
+.card-of-game__link-button-light {
+    background-color: rgba(64, 102, 204, 0.7);
+}
+
+.partners__image-light {
+    border: 3px solid #9429d1;
+    padding: 5px;
+}
+
+.footer-light {
+    background-color: #a5a5a5;
+}
+.footer__link-light {
+    color: #1b1b1b;
+}
+.footer__link-light:hover {
+    color: #1a46be;
 }
