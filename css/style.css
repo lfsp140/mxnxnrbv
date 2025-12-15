@@ -24,6 +24,8 @@ body {
     border: 3px solid #9429d1;
     color: #e8e8e8;
     font-size: 17pt;
+    font-family: "Bebas Neue";
+    padding-top: 5px;
     height: 60px;
     border-radius: 7px;
     transition: all 0.5s ease;
@@ -33,7 +35,7 @@ body {
 }
 
 /*header*/
-header {
+.header {
     width: 80%;
     background-color: #303030;
     padding: 20px 10%;
@@ -48,7 +50,7 @@ header {
     position: static;
 }
 .header__logotype {
-    width: 80px;
+    width: 20%;
     border-radius: 15px;
 }
 .header__main-panel {
@@ -64,7 +66,7 @@ header {
     width: 40px;
 }
 .header__menu {
-    font-size: 18pt;
+    font-size: 20pt;
     width: 60%;
     display: flex;
     justify-content: space-between;
@@ -75,7 +77,7 @@ header {
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 10px;
+    padding: 13px 10px 10px 10px;
     border-radius: 7px;
     transition: all 0.5s ease;
 }
@@ -91,14 +93,18 @@ header {
 .header__image {
     height: 25px;
     margin-right: 10px;
+    margin-bottom: 5px;
 }
 
-.index__title {
+.index-title {
     font-size: 32pt;
     margin: 70px 0px 0px 10%;
 }
 /*index.html слайдер*/
-.index-title {
+.search-title,
+.advantages-title,
+.partners-title,
+.games-title {
     font-size: 22pt;
 }
 .slider {
@@ -164,7 +170,7 @@ header {
     font-family: "Orbitron";
 }
 .slider__link {
-    padding: 15px 30px;
+    padding: 15px 30px 10px 30px;
     color: #e8e8e8;
     text-decoration: none;
     border-radius: 10px;
@@ -184,19 +190,45 @@ header {
 }
 .search__form {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
     font-size: 20pt;
-    width: 95%;
+    width: 100%;
     margin: 0px auto;
 }
 .search__input {
-    width: 85%;
+    width: 100%;
     margin: 0px;
     height: 50px;
 }
+.search__field-long {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
 .search__button {
-    width: 10%;
+    width: 15%;
+    margin: 20px 0px 0px auto;
+}
+.search__hints {
+    display: none;
+    margin-top: 5px;
+    width: 20%;
+    background-color: #3d3d3d;
+    border-radius: 8px;
+    font-size: 16pt;
+    letter-spacing: 3px;
+    height: fit-content;
+}
+.search__hints_active {
+    display: block;
+}
+.search__hint {
+    border-top: 2px solid black;
+    margin: 0px;
+    padding: 10px 10px;
+}
+.search__hint:hover {
+    cursor: pointer;
 }
 /*index.html преимущества*/
 .advantages {
@@ -217,7 +249,7 @@ header {
     border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 18%;
     font-size: 17pt;
     margin: 20px 10px;
@@ -246,11 +278,12 @@ header {
 .games__link {
     text-decoration: none;
     color: #e8e8e8;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .games__card-of-game {
     margin: 30px 15px;
-    display: flex;
-    flex-direction: column;
     padding: 20px;
     width: 15%;
     position: relative;
@@ -289,15 +322,17 @@ header {
     justify-content: center;
     flex-wrap: wrap;
 }
+.partners__link {
+    margin: 0px 30px;
+}
 .partners__image {
     height: 150px;
     border-radius: 10px;
-    margin: 0px 30px;
 }
 
 /*catalog.html стили для страницы каталога*/
-.catalog__title {
-    margin: 150px 0px 0px 10%;
+.catalog-title {
+    margin: 50px 0px 0px 10%;
     font-size: 30pt;
 }
 .catalog {
@@ -352,7 +387,7 @@ header {
 }
 .catalog__button {
     font-size: 16pt;
-    padding: 7px 20px;
+    padding: 10px 20px 7px 20px;
     height: fit-content;
     margin-top: 20px;
 }
@@ -417,7 +452,7 @@ header {
     color: #ffcc00
 }
 .card-of-game__link-button  {
-    padding: 10px;
+    padding: 13px 10px 10px 10px;
     border: 2px solid #2e5bd4;
     background-color: #2e5bd4;
     border-radius: 5px;
@@ -425,6 +460,7 @@ header {
     text-decoration: none;
     margin-top: auto;
     text-align: center;
+    align-items: end;
 }
 
 /*profile.html личный кабинет пользователя*/
@@ -498,7 +534,7 @@ header {
 .main-panel__new-password {
     color: #e8e8e8;
     text-decoration: none;
-    padding: 10px;
+    padding: 13px 10px 10px 10px;
     border: 2px solid #2e5bd4;
     background-color: rgb(46, 91, 212, 0.5);
     border-radius: 8px;
@@ -561,12 +597,8 @@ header {
     height: 65px;
 }
 .main-panel__buy_end {
-    display: flex;
-    align-items: center;
-    padding-left: 2px;
-    margin: 10px 20px 20px 20px;
     border-bottom: 0px;
-    transition: all 0.5s ease;
+    position: static;
 }
 .main-panel__buy_end:hover {
     background-color: rgb(148, 41, 209, 0.5);
@@ -582,7 +614,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 40%;
-    font-size: 14pt;
+    font-size: 16pt;
 }
 .main-panel__buy-date {
     margin: 10px;
@@ -594,7 +626,7 @@ header {
 }
 
 /*admin.html, login.html, register.html стили для формы*/
-.template-form {
+.form {
     background-color: #383838;
     border-radius: 10px;
     padding: 30px 50px 40px 50px;
@@ -676,7 +708,7 @@ input, textarea {
 }
 
 
-footer {
+.footer {
     background-color: #303030;
     width: 70%;
     padding: 40px 15% 20px 15%;
@@ -761,6 +793,9 @@ footer {
 .search__input-light {
     background-color: #ffffff;
 }
+.search__hints-light {
+    background-color: #afafaf;
+}
 
 .advantages-light {
     background-color: #afafaf;
@@ -805,7 +840,7 @@ footer {
         height: 50px;
     }
     
-    header {
+    .header {
         display: flex;
         flex-direction: column;
         position: static;
@@ -828,8 +863,14 @@ footer {
     .header__menu_active {
         display: flex;
     }
+    .header__menu-item {
+        margin: 5px 0px;
+    }
+    .header__logotype {
+        width: 120px;
+    }
 
-    .index__title {
+    .index-title {
         font-size: 28pt;
     }
     .slider {
@@ -869,20 +910,18 @@ footer {
         padding: 10px;
         font-size: 14pt;
     }
-    .index-title {
+    .search-title,
+    .advantages-title,
+    .partners-title,
+    .games-title {
         font-size: 20pt;
     }
-    .search__form {
-        flex-direction: column;
-        width: 100%;
-        text-align: right;
-    }
-    .search__input {
-        width: 100%;
-    }
     .search__button {
+        width: 40%;
+    }
+    .search__hints {
         width: 50%;
-        margin: 20px 0px 0px auto;
+        font-size: 12pt;
     }
     .advantages {
         width: 82%;
@@ -915,22 +954,27 @@ footer {
         border-top: 3px solid #9429d1;
         padding: 10px;
     }
+    .games__card-of-game:hover {
+        border: 0px;
+    }
     .partners {
         width: 90%;
     }
     .partners__list-of-partners {
         justify-content: start;
     }
+    .partners__link {
+        margin: 15px 10px;
+    }
     .partners__image {
         height: 100px;
-        margin: 15px 10px;
     }
 
     .catalog {
         width: 100%;
         flex-wrap: wrap;
     }
-    .catalog__title {
+    .catalog-title {
         font-size: 24pt;
         margin: 50px 0px 0px 10%;
     }
@@ -991,9 +1035,6 @@ footer {
         flex-direction: column;
         margin: 10px 15px 20px 15px;
     }
-    .main-panel__buy_end {
-        flex-direction: column;
-    }
     .main-panel__buy-name {
         width: 100%;
         margin: 10px;
@@ -1009,7 +1050,7 @@ footer {
         margin: 5px 5px 10px 10px;
     }
 
-    .template-form {
+    .form {
         width: 80%;
         padding: 15px 15px 30px 15px;
         font-size: 14pt;
@@ -1044,7 +1085,7 @@ footer {
         margin: 30px 0px 20px 0px;
     }
 
-    footer {
+    .footer {
         display: block;
         width: 90%;
         padding: 40px 5% 20px 5%;
@@ -1062,7 +1103,7 @@ footer {
         font-size: 16pt;
         height: 50px;
     }
-    header {
+    .header {
         flex-direction: column;
         position: static;
         align-items: end;
@@ -1084,8 +1125,14 @@ footer {
     .header__menu_active {
         display: flex;
     }
+    .header__menu-item {
+        margin: 10px 0px;
+    }
+    .header__logotype {
+        width: 150px;
+    }
 
-    .index__title {
+    .index-title {
         font-size: 30pt;
     }
     .slider {
@@ -1126,19 +1173,18 @@ footer {
         padding: 15px;
         font-size: 16pt;
     }
-    .index-title {
+    .search-title,
+    .advantages-title,
+    .partners-title,
+    .games-title {
         font-size: 22pt;
-    }
-    .search__form {
-        flex-direction: column;
-        width: 100%;
-    }
-    .search__input {
-        width: 100%;
     }
     .search__button {
         width: 40%;
-        margin: 20px 0px 0px auto;
+    }
+    .search__hints {
+        width: 50%;
+        font-size: 14pt;
     }
     .advantages {
         width: 80%;
@@ -1177,6 +1223,9 @@ footer {
         border-top: 3px solid #9429d1;
         padding: 10px;
     }
+    .games__card-of-game:hover {
+        border: 0px;
+    }
     .partners {
         width: 90%;
     }
@@ -1192,7 +1241,7 @@ footer {
         width: 100%;
         flex-wrap: wrap;
     }
-    .catalog__title {
+    .catalog-title {
         font-size: 26pt;
         margin: 50px 0px 0px 10%;
     }
@@ -1263,9 +1312,6 @@ footer {
         flex-direction: column;
         margin: 10px 15px 20px 15px;
     }
-    .main-panel__buy_end {
-        flex-direction: column;
-    }
     .main-panel__buy-name {
         width: 100%;
         margin: 10px;
@@ -1281,7 +1327,7 @@ footer {
         margin: 5px 10px 10px 10px;
     }
 
-    .template-form {
+    .form {
         width: 70%;
         padding: 15px 30px 30px 30px;
         font-size: 16pt;
@@ -1319,7 +1365,7 @@ footer {
         margin: 30px 0px 10px 0px;
     }
 
-    footer {
+    .footer {
         width: 80%;
         padding: 40px 10% 20px 10%;
         justify-content: space-between;
@@ -1336,9 +1382,10 @@ footer {
     }
 }
 
-@media ((min-width: 767px) and (max-width: 1440px)) {
+@media ((min-width: 769px) and (max-width: 1440px)) {
     .header__menu {
-        width: 80%;
+        width: 60%;
+        flex-wrap: wrap;
     }
     .header__button-menu {
         display: none;
@@ -1346,8 +1393,14 @@ footer {
     .header__menu {
         font-size: 16pt;
     }
+    .header__logotype {
+        width: 170px;
+    }
+    .header__menu-item {
+        margin: 10px 0px;
+    }
 
-    .index__title {
+    .index-title {
         font-size: 30pt;
     }
     .slider {
@@ -1375,7 +1428,7 @@ footer {
     }
     .slider__text-block {
         display: flex;
-        width: 70%;
+        width: 95%;
         justify-content: space-around;
         font-size: 20pt;
         margin: 30px auto 0px auto;
@@ -1384,6 +1437,7 @@ footer {
     .slider__title {
         font-size: 22pt;
         margin: 10px;
+        width: 40%;
     }
     .slider__price {
         margin: 10px;
@@ -1392,7 +1446,10 @@ footer {
         padding: 15px;
         font-size: 18pt;
     }
-    .index-title {
+    .search-title,
+    .advantages-title,
+    .partners-title,
+    .games-title {
         font-size: 22pt;
     }
     .search__form {
@@ -1421,11 +1478,11 @@ footer {
     }
     .advantages__text {
         margin: 10px auto;
-        max-width: 200px;
+        max-width: 150px;
     }
     .advantages__image {
         height: 60px;
-        margin: 10px auto;
+        margin: 10px;
     }
     .games {
         width: 90%;
@@ -1453,6 +1510,9 @@ footer {
     .catalog {
         width: 90%;
     }
+    .catalog-title {
+        margin: 90px 0px 0px 10%;
+    }
     .catalog__filter {
         width: 20%;
         min-width: 230px;
@@ -1473,7 +1533,7 @@ footer {
 
     .main-panel {
         width: 90%;
-        margin: 20px auto;
+        margin: 50px auto;
     }
     .main-panel__user-panel {
         width: fit-content;
@@ -1500,9 +1560,6 @@ footer {
         flex-direction: column;
         margin: 10px 15px 20px 15px;
     }
-    .main-panel__buy_end {
-        flex-direction: column;
-    }
     .main-panel__buy-name {
         width: 100%;
         margin: 10px;
@@ -1518,10 +1575,10 @@ footer {
         margin: 5px 10px 10px 10px;
     }
 
-    .template-form {
+    .form {
         width: 50%;
         padding: 15px 30px 30px 30px;
-        margin: 170px auto 0px auto;
+        margin: 250px auto 0px auto;
     }
     .form__button-login {
         width: 30%;
@@ -1543,7 +1600,7 @@ footer {
         margin: 30px 0px 10px 0px;
     }
 
-    footer {
+    .footer {
         width: 80%;
         padding: 40px 10% 20px 10%;
         justify-content: space-between;

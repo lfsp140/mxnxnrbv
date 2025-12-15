@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
         <meta charset="UTF-8">
         <title>Каталог игр</title>
@@ -8,82 +8,82 @@
         <link rel="icon" type="image/png" href="img/logo.ico">
     </head>
     <body>
-        <header>
+        <header class="header header-index">
             <div class="header__main-panel">
                 <a href="index.html">
-                    <img src="img/logo.webp" alt="Логотип" class="header__logotype">
+                    <img src="img/logo.svg" alt="Логотип" class="header__logotype">
                 </a>
                 <button class="header__button-menu">
-                    <img src="img/burger.svg" class="header__icon-menu">
+                    <img src="img/burger.svg" class="header__icon-menu" alt="меню">
                 </button>
             </div>
             <nav class="header__menu">
                 <a class="header__menu-item" href="index.html#search">
-                    <img src="img/search.svg" class="header__image">
+                    <img src="img/search.svg" class="header__image" alt="поиск">
                     Поиск
                 </a>
                 <a class="header__menu-item header__menu-item_choice" href="catalog.html">
-                    <img src="img/catalog.svg" class="header__image">
+                    <img src="img/catalog.svg" class="header__image" alt="каталог">
                     Каталог игр
                 </a>
                 <a class="header__menu-item" href="profile.html">
-                    <img src="img/avatar.svg" class="header__image">
+                    <img src="img/avatar.svg" class="header__image" alt="личный кабинет">
                     Личный кабинет
                 </a>
                 <a class="header__menu-item" href="login.html">
-                    <img src="img/door.svg" class="header__image">
+                    <img src="img/door.svg" class="header__image" alt="вход">
                     Войти
                 </a>
             </nav>
         </header>
         <main>
-            <h1 class="catalog__title">Каталог игр</h1>
+            <h1 class="catalog-title">Каталог игр</h1>
             <section class="catalog">
                 <div class="catalog__filter">
                     <div class="catalog__top-block">
                         <p class="catalog__filter-title">Фильтр</p>
-                        <img src="img/down.svg" class="catalog__image-down">
+                        <img src="img/down.svg" class="catalog__image-down" alt="фильтр">
                     </div>
-                    <form class="catalog__form" action="" method="get">
+                    <form class="catalog__form" action="catalog.html" method="get">
                         <p class="catalog__filter-name">Жанр</p>
-                        <label class="catalog__genre" for="genre">
-                            <input type="checkbox" value="shuter" name="genre" class="catalog__genre-checkbox">
+                        <label class="catalog__genre" for="shuter">
+                            <input type="checkbox" value="shuter" name="genre" id="shuter" class="catalog__genre-checkbox">
                             Шутер
                         </label>
-                        <label class="catalog__genre" for="genre">
-                            <input type="checkbox" value="simulator" name="genre" class="catalog__genre-checkbox">
+                        <label class="catalog__genre" for="simulator">
+                            <input type="checkbox" value="simulator" name="genre" id="simulator"  class="catalog__genre-checkbox">
                             Симулятор
                         </label>
-                        <label class="catalog__genre" for="genre">
-                            <input type="checkbox" value="rpg" name="genre" class="catalog__genre-checkbox">
+                        <label class="catalog__genre" for="rpg">
+                            <input type="checkbox" value="rpg" name="genre" id="rpg"  class="catalog__genre-checkbox">
                             Ролевая игра (RPG)
                         </label>
-                        <label class="catalog__genre" for="genre">
-                            <input type="checkbox" value="speed" name="genre" class="catalog__genre-checkbox">
+                        <label class="catalog__genre" for="speed">
+                            <input type="checkbox" value="speed" name="genre" id="speed"  class="catalog__genre-checkbox">
                             Гонки
                         </label>
-                        <label class="catalog__genre" for="genre">
-                            <input type="checkbox" value="strategy" name="genre" class="catalog__genre-checkbox">
+                        <label class="catalog__genre" for="strategy">
+                            <input type="checkbox" value="strategy" name="genre" id="strategy"  class="catalog__genre-checkbox">
                             Стратегия
                         </label>
-                        <label class="catalog__genre" for="genre">
-                            <input type="checkbox" value="king_arena" name="genre" class="catalog__genre-checkbox">
+                        <label class="catalog__genre" for="king_arena">
+                            <input type="checkbox" value="king_arena" name="genre" id="king_arena"  class="catalog__genre-checkbox">
                             Королевская арена
                         </label>
-                        <label class="catalog__genre" for="genre">
-                            <input type="checkbox" value="adventure" name="genre" class="catalog__genre-checkbox">
+                        <label class="catalog__genre" for="adventure">
+                            <input type="checkbox" value="adventure" name="genre" id="adventure"  class="catalog__genre-checkbox">
                             Приключение
                         </label>
-                        <label class="catalog__genre" for="genre">
-                            <input type="checkbox" value="sandbox" name="genre" class="catalog__genre-checkbox">
+                        <label class="catalog__genre" for="sandbox">
+                            <input type="checkbox" value="sandbox" name="genre" id="sandbox"  class="catalog__genre-checkbox">
                             Песочница
                         </label>
                         <button type="submit" class="button catalog__button">Применить</button>
                     </form>
                 </div>
                 <div class="catalog__list-of-cards">
-                    <div class="catalog__card-of-game">
-                        <img src="img/fifa.webp" class="catalog__image">
+                    <div class="catalog__card-of-game card-of-game">
+                        <img src="img/fifa.webp" class="catalog__image" alt="фифа">
                         <h3 class="card-of-game__title">EA Sports FC 25</h3>
                         <p class="card-of-game__genre">Симулятор</p>
                         <p class="card-of-game__company">Electronic Arts (EA)</p>
@@ -97,8 +97,8 @@
                         </div>
                         <a href="" class="card-of-game__link-button">Подробнее</a>
                     </div>
-                    <div class="catalog__card-of-game">
-                        <img src="img/gta.webp" class="catalog__image">
+                    <div class="catalog__card-of-game card-of-game">
+                        <img src="img/gta.webp" class="catalog__image" alt="гта">
                         <h3 class="card-of-game__title">Grand Theft Auto V</h3>
                         <p class="card-of-game__genre">Приключение</p>
                         <p class="card-of-game__company">Rokstar Games</p>
@@ -112,8 +112,8 @@
                         </div>
                         <a href="" class="card-of-game__link-button">Подробнее</a>
                     </div>
-                    <div class="catalog__card-of-game">
-                        <img src="img/dota_2.webp" class="catalog__image">
+                    <div class="catalog__card-of-game card-of-game">
+                        <img src="img/dota_2.webp" class="catalog__image" alt="дота 2">
                         <h3 class="card-of-game__title">Dota 2</h3>
                         <p class="card-of-game__genre">MOBA (Многопользовательская онлайн боевая арена)</p>
                         <p class="card-of-game__company">Valve corporation</p>
@@ -127,8 +127,8 @@
                         </div>
                         <a href="" class="card-of-game__link-button">Подробнее</a>
                     </div>
-                    <div class="catalog__card-of-game">
-                        <img src="img/fortnite.webp" class="catalog__image">
+                    <div class="catalog__card-of-game card-of-game">
+                        <img src="img/fortnite.webp" class="catalog__image" alt="фортнайт">
                         <h3 class="card-of-game__title">Fortnite</h3>
                         <p class="card-of-game__genre">Королевская битва</p>
                         <p class="card-of-game__company">Epic Games</p>
@@ -142,8 +142,8 @@
                         </div>
                         <a href="" class="card-of-game__link-button">Подробнее</a>
                     </div>
-                    <div class="catalog__card-of-game">
-                        <img src="img/detroit.webp" class="catalog__image">
+                    <div class="catalog__card-of-game card-of-game">
+                        <img src="img/detroit.webp" class="catalog__image" alt="детройт">
                         <h3 class="card-of-game__title">Detroit: Become Human</h3>
                         <p class="card-of-game__genre">Приключение</p>
                         <p class="card-of-game__company">Quantic Dream</p>
@@ -157,8 +157,8 @@
                         </div>
                         <a href="" class="card-of-game__link-button">Подробнее</a>
                     </div>
-                    <div class="catalog__card-of-game">
-                        <img src="img/call_of_duty.webp" class="catalog__image">
+                    <div class="catalog__card-of-game card-of-game">
+                        <img src="img/call_of_duty.webp" class="catalog__image" alt="call of duty">
                         <h3 class="card-of-game__title">Call of Duty</h3>
                         <p class="card-of-game__genre">Шутер</p>
                         <p class="card-of-game__company">Activision</p>
@@ -172,8 +172,8 @@
                         </div>
                         <a href="" class="card-of-game__link-button">Подробнее</a>
                     </div>
-                    <div class="catalog__card-of-game">
-                        <img src="img/minecraft.webp" class="catalog__image">
+                    <div class="catalog__card-of-game card-of-game">
+                        <img src="img/minecraft.webp" class="catalog__image" alt="майнкрафт">
                         <h3 class="card-of-game__title">Minecraft</h3>
                         <p class="card-of-game__genre">Песочница</p>
                         <p class="card-of-game__company">Mojang AB</p>
@@ -187,8 +187,8 @@
                         </div>
                         <a href="" class="card-of-game__link-button">Подробнее</a>
                     </div>
-                    <div class="catalog__card-of-game">
-                        <img src="img/witcher.webp" class="catalog__image">
+                    <div class="catalog__card-of-game card-of-game">
+                        <img src="img/witcher.webp" class="catalog__image" alt="ведьмак">
                         <h3 class="card-of-game__title">The Witcher</h3>
                         <p class="card-of-game__genre">Ролевая игра (RPG)</p>
                         <p class="card-of-game__company">CD Project</p>
@@ -205,14 +205,14 @@
                 </div>
             </section>
         </main>
-        <footer>
+        <footer class="footer">
             <div class="footer__list-of-links">
                 <div class="footer__text-block">
-                    <img src="img/phone.svg" class="footer__image">
+                    <img src="img/phone.svg" class="footer__image" alt="телефон">
                     <p class="footer__text">Телефон: 8-800-999-55-99</p>
                 </div>
                 <div class="footer__text-block">
-                    <img src="img/email.svg" class="footer__image">
+                    <img src="img/email.svg" class="footer__image" alt="email">
                     <p class="footer__text">Email: best@games.ru</p>
                 </div>
             </div>

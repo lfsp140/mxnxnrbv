@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
     <head>
         <meta charset="UTF-8">
         <title>Административная панель</title>
@@ -8,36 +8,36 @@
         <link rel="icon" type="image/png" href="img/logo.ico">
     </head>
     <body>
-        <header>
+        <header class="header header-index">
             <div class="header__main-panel">
                 <a href="index.html">
-                    <img src="img/logo.webp" alt="Логотип" class="header__logotype">
+                    <img src="img/logo.svg" alt="Логотип" class="header__logotype">
                 </a>
                 <button class="header__button-menu">
-                    <img src="img/burger.svg" class="header__icon-menu">
+                    <img src="img/burger.svg" class="header__icon-menu" alt="меню">
                 </button>
             </div>
             <nav class="header__menu">
                 <a class="header__menu-item" href="index.html#search">
-                    <img src="img/search.svg" class="header__image">
+                    <img src="img/search.svg" class="header__image" alt="поиск">
                     Поиск
                 </a>
                 <a class="header__menu-item" href="catalog.html">
-                    <img src="img/catalog.svg" class="header__image">
+                    <img src="img/catalog.svg" class="header__image" alt="каталог">
                     Каталог игр
                 </a>
                 <a class="header__menu-item" href="profile.html">
-                    <img src="img/avatar.svg" class="header__image">
+                    <img src="img/avatar.svg" class="header__image" alt="личный кабинет">
                     Личный кабинет
                 </a>
                 <a class="header__menu-item" href="login.html">
-                    <img src="img/door.svg" class="header__image">
+                    <img src="img/door.svg" class="header__image" alt="вход">
                     Войти
                 </a>
             </nav>
         </header>
         <main>
-            <form class="template-form" action="" method="post">
+            <form class="form" action="admin.html" method="post">
                 <h2 class="form__title form__title-admin">Добавление игры</h2>
                 <div class="form__field-double">
                     <div class="form__item form__item_short">
@@ -70,14 +70,14 @@
                 <button type="submit" class="button form__button-admin">Добавить</button>
             </form>
         </main>
-        <footer>
+        <footer class="footer">
             <div class="footer__list-of-links">
                 <div class="footer__text-block">
-                    <img src="img/phone.svg" class="footer__image">
+                    <img src="img/phone.svg" class="footer__image" alt="телефон">
                     <p class="footer__text">Телефон: 8-800-999-55-99</p>
                 </div>
                 <div class="footer__text-block">
-                    <img src="img/email.svg" class="footer__image">
+                    <img src="img/email.svg" class="footer__image" alt="email">
                     <p class="footer__text">Email: best@games.ru</p>
                 </div>
             </div>
